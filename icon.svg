@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Session delete">
+  <defs>
+    <linearGradient id="sd-bg" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4d6bfe"/>
+      <stop offset="1" stop-color="#2b3fd8"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#sd-bg)"/>
+  <g fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 24h20"/>
+    <path d="M27 24v-3.5a2.5 2.5 0 0 1 2.5-2.5h5a2.5 2.5 0 0 1 2.5 2.5V24"/>
+    <path d="M25 24l1.6 15.2a3 3 0 0 0 3 2.8h4.8a3 3 0 0 0 3-2.8L39 24"/>
+    <path d="M29.5 29.5v7"/>
+    <path d="M34.5 29.5v7"/>
+  </g>
+</svg>

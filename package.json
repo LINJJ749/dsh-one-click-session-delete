@@ -1,0 +1,71 @@
+{
+  "name": "dsh-one-click-session-delete",
+  "version": "1.0.0",
+  "description": "Permanently delete a Session from the Workspace sidebar in DeepSeek Harness with one click: a native row action and menu item, a lightweight confirmation, live-Session protection, cascade for derived Sessions, and cleanup of the projection cache and workspace bookkeeping.",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "LINJJ749",
+    "url": "https://github.com/LINJJ749"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LINJJ749/dsh-one-click-session-delete.git"
+  },
+  "homepage": "https://github.com/LINJJ749/dsh-one-click-session-delete#readme",
+  "bugs": {
+    "url": "https://github.com/LINJJ749/dsh-one-click-session-delete/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "cordis",
+    "session",
+    "sessions",
+    "delete"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    ".gitignore"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-session",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  },
+  "icon": "./icon.svg",
+  "publishConfig": {
+    "access": "public"
+  }
+}

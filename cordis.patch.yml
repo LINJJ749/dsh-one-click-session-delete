@@ -1,0 +1,8 @@
+# dsh-one-click-session-delete bundle patch
+#
+# One plugin row: the Host half registers the delete API route (and the
+# shared deletion operation); the Client half adds the one-click delete
+# control to the Workspace sidebar's Session rows.
+- insert:
+    - id: one-click-session-delete
+      name: 'dsh-one-click-session-delete'
